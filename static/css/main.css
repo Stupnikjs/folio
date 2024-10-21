@@ -34,28 +34,39 @@ body {
 }
 
 h1 {
-  color: green; 
+  color: rgb(56, 111, 200); 
   background-color: aliceblue; 
   padding: 0.5rem; 
+  text-align: center;
+}
+ 
+
+nav {
+
+  background-color: aliceblue;
+  height: 50vh;
+  padding: .5rem;
+}
+nav > p  {
+
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-
-#iconeUl {
-  margin: 10% auto;
+nav > #flexBoxIntro {
+  height: 10vh;
   display: flex;
-  list-style-type: none;
   justify-content: space-around;
 }
 
-#iconeUl > li {
-  flex:1; 
-  justify-content: center;
-  display: flex;
+nav > #flexBoxIntro > div >  h2:hover ~ p {
+  display: block;
+}
+nav > #flexBoxIntro > div >  p {
+  display: none;
 }
 
-#iconeUl > li > i {
-  font-size: 2rem;
-}
+
 
 .grid-section{
   display: grid;
@@ -68,84 +79,6 @@ h1 {
   height: max-content;
 }
 
-
-
-
-
-
-.annoncesDiv{
-  display: flex;
-  flex-direction: column;
-  gap: 2%;
-}
-
-#annoncesDiv{
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1%; 
-}
-
-.annonceLink {
-  margin: 1px 0;
-  width: 45%;
-  background-color: aliceblue;
-  color: black; 
-  padding: .5rem;
-  display: flex; 
-  min-height: 8vh;
-  text-decoration: none;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  border: .1px solid lightgray;
-}
-
-.annonceLink:hover{
-  background-color: antiquewhite;
-}
-
-
-
-
-.lieuSpan{
-  text-decoration: none;
-  font-size: 0.5rem;
-  position: absolute;
-  bottom: .1vh;
-   
-}
- 
-.dateSpan{
-  position: absolute;
-  font-size: .5rem;
-  right: 1vw;
-}
-
-.depSpan{
-  position: absolute;
-  left: 1vw;
-  top: .5vh;
-  font-size: .7rem; 
-}
-
-
-.contratSpan{
-  position: absolute;
-  top: 5; 
-  font-size: small;
-  right: 1vw; 
-}
-
-.professionSpan{
-  color: gray; 
-}
-
-.searchForm {
-  display: flex;
-  flex-direction: column;
-}
 
 footer {
   
@@ -177,14 +110,7 @@ footer {
     grid-template-columns: 10fr 80fr 10fr ;
     
   }
-  
-  #locationDiv > input {
-    width: 10vw;
-    height: 5vh;
-    font-size: 2rem;
-    text-align: center;
-    
-  }
+
 
 
 
